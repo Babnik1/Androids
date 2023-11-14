@@ -42,6 +42,18 @@ public class HelloActivity extends Activity {
             }
         });
 
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button3.setText("НАЖАТО!");
+                count1 = 0;
+                count2 = 0;
+                text1.setText("Bottom 1 = " + count1);
+                text2.setText("Bottom 2 = " + count2);
+            }
+        });
+
 
     }
 
